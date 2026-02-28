@@ -20,6 +20,6 @@ Thank you for your interest in contributing to **CSharpBenchLab**!
 ## Review Process
 
 - All PRs will be reviewed for clarity, correctness, and relevance.
-- Once approved, your benchmark will be included in the next results export to [`/Docs/Results`](Docs/Results).
+- Once approved, your benchmark will be included in the next results export to [`/Docs/Results`](./Docs/Results).
 
 Thank you for helping make CSharpBenchLab a valuable resource for the C# community!
