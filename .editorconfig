@@ -1,0 +1,40 @@
+# Top-most EditorConfig file
+root = true
+
+# All files
+[*]
+indent_style = space
+indent_size = 4
+insert_final_newline = true
+charset = utf-8
+end_of_line = crlf
+
+# XML/Project files indentation
+[*.csproj]
+indent_size = 2
+
+[*.yml]
+indent_size = 2
+
+# C# files
+[*.cs]
+# Namespace preferences
+csharp_style_namespace_declarations = file_scoped:warning
+
+# Code style rules
+dotnet_diagnostic.IDE0161.severity = warning # enforce file-scoped namespace
+
+# Formatting rules
+csharp_new_line_before_open_brace = all
+csharp_new_line_before_else = true
+csharp_new_line_before_catch = true
+csharp_new_line_before_finally = true
+
+# Naming conventions
+dotnet_naming_rule.interface_should_be_prefixed_with_i.severity = suggestion
+dotnet_naming_rule.interface_should_be_prefixed_with_i.symbols = id_interface
+dotnet_naming_rule.interface_should_be_prefixed_with_i.style = style_prefix_i
+
+dotnet_naming_symbols.id_interface.applicable_kinds = interface
+dotnet_naming_style.style_prefix_i.required_prefix = I
+dotnet_naming_style.style_prefix_i.capitalization = pascal_case
